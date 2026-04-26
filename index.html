@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warehouse Systems & WMS Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Vyron Galapin</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="kawasaki.html">Kawasaki</a>
+        <a href="draexlmaier.html">Draexlmaier</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Warehouse Systems Coordinator & Developer</h1>
+      <p class="lede">
+        I build and support warehouse systems, coordinate operations, and develop software solutions that improve
+        warehouse management processes.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+        <a class="btn" href="#roles">View Experience</a>
+      </div>
+    </section>
+
+    <section id="roles" class="container">
+      <h2>Experience</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>WMS Software Developer</h3>
+          <p class="meta">Kawasaki</p>
+          <p>
+            Focused on warehouse management system development, issue resolution, process improvement,
+            and software support for warehouse operations.
+          </p>
+          <a class="text-link" href="kawasaki.html">Read more</a>
+        </article>
+
+        <article class="card">
+          <h3>System Coordinator</h3>
+          <p class="meta">Draexlmaier</p>
+          <p>
+            Coordinated warehouse systems, supported day-to-day operations, handled system issues,
+            and helped maintain smooth warehouse execution.
+          </p>
+          <a class="text-link" href="draexlmaier.html">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container split">
+      <div>
+        <h2>What I Handle</h2>
+        <ul class="clean-list">
+          <li>Warehouse management systems support</li>
+          <li>Operational troubleshooting</li>
+          <li>Process improvement</li>
+          <li>Software development for WMS workflows</li>
+          <li>Cross-team coordination</li>
+          <li>Logistics and supply chain systems knowledge</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Resume</h2>
+        <p>Download a PDF copy of my resume.</p>
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Use the form below to get in touch.</p>
+      <!-- <form id="contactForm" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="formMessage" class="form-message"></p>
+      </form> -->
+      <!-- <p class="note">This starter version is ready for GitHub Pages. To make the form actually send email, connect it to a service like Formspree.</p> -->
+      <form action="https://formspree.io/f/mbdzavdg" method="POST" class="contact-form">
+        <input name="name" type="text" placeholder="Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea style="resize: none;" name="message" required placeholder="Message"></textarea>
+
+        <input type="hidden" name="_subject" value="New portfolio contact submission">
+        <input type="hidden" name="_next" value="https://yourusername.github.io/your-repo/thank-you.html">
+
+        <button class="btn primary" type="submit" class="btn primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Your Name · Warehouse Systems Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

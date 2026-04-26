@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Coordinator | Draexlmaier</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#ffffff;
+      --ink:#122033;
+      --muted:#56657a;
+      --accent:#1f6feb;
+      --accent-soft:#eaf2ff;
+      --line:#dbe4f0;
+      --chip:#f4f7fb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:#f5f7fb;
+      line-height:1.6;
+    }
+    .site-header{
+      background:var(--bg);
+      color:#fff;
+      padding:18px 0;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .container{width:min(1080px, 92vw); margin:0 auto;}
+    .nav{display:flex; justify-content:space-between; align-items:center; gap:16px;}
+    .brand{color:#fff; font-weight:700; text-decoration:none; font-size:1.1rem;}
+    nav a{color:#dce7ff; text-decoration:none; margin-left:18px; font-size:.98rem;}
+    nav a:hover{color:#fff;}
+    .hero{
+      background:linear-gradient(135deg, #0b1220 0%, #14315f 100%);
+      color:white;
+      padding:64px 0 42px;
+    }
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:.82rem;
+      opacity:.8;
+      margin:0 0 10px;
+    }
+    h1{font-size:clamp(2rem, 4vw, 3.2rem); line-height:1.1; margin:0 0 14px;}
+    .lede{font-size:1.16rem; max-width:820px; color:#e7efff; margin:0;}
+    .section{padding:32px 0;}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:18px;
+      margin-top:18px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 10px 28px rgba(16,24,40,.05);
+    }
+    .card h3{margin:0 0 10px; font-size:1.1rem;}
+    .muted{color:var(--muted);}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+    .chip{
+      background:var(--chip);
+      border:1px solid var(--line);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:.92rem;
+      color:#29405c;
+    }
+    h2{font-size:1.6rem; margin:0 0 10px;}
+    .two-col{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+    }
+    .readable p{margin:0 0 14px;}
+    .list{padding-left:20px; margin:10px 0 0;}
+    .list li{margin-bottom:10px;}
+    .impact{
+      background:var(--accent-soft);
+      border:1px solid #bfd3ff;
+    }
+    .timeline{
+      display:grid;
+      gap:16px;
+      margin-top:10px;
+    }
+    .step{
+      background:#fff;
+      border-left:5px solid var(--accent);
+      border-radius:14px;
+      padding:18px 18px 16px;
+      border-top:1px solid var(--line);
+      border-right:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .step h3{margin:0 0 6px}
+    .footer{
+      padding:30px 0 50px;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .cta{
+      display:flex; flex-wrap:wrap; gap:12px; margin-top:24px;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--ink);
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:var(--accent);
+    }
+    @media (max-width: 860px){
+      .two-col{grid-template-columns:1fr;}
+      .nav{flex-direction:column; align-items:flex-start;}
+      nav a{margin:0 14px 0 0;}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Vyron Galapin</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="kawasaki.html">Kawasaki</a>
+        <a href="draexlmaier.html">Draexlmaier</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Draexlmaier</p>
+      <h1>System Coordinator</h1>
+      <p class="lede">I support warehouse and production system coordination across logistics, linefeed, shipping, receiving, planning, and engineering in a JIT / JIS environment where timing, sequence, and data accuracy directly affect plant performance.</p>
+      <div class="cta">
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+        <a class="btn" href="assets/draexlmaier_system_coordinator_presentation.pptx" download>Download Draexlmaier Presentation</a>
+        <a class="btn" href="index.html#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section two-col">
+      <div class="card readable">
+        <h2>Overview</h2>
+        <p>At Draexlmaier, I work as a System Coordinator supporting warehouse and production operations through system visibility, reporting, process investigation, and cross-functional coordination. My role connects logistics, production, IT, linefeed, shipping, receiving, planning, and engineering so teams can act on accurate operational data.</p>
+        <p>I use plant systems and reporting tools to help make sure production has the correct materials, the correct part numbers, the right revision levels, and the visibility needed to keep operations running in sequence. I also investigate system and process issues that can affect inventory movement, quality, linefeed timing, and finished good accuracy.</p>
+        <p>Because the operation runs in a Just-in-Time and Just-in-Sequence environment, my work is focused on accuracy, timeliness, and keeping connected processes aligned across the plant.</p>
+      </div>
+      <div class="card">
+        <h2>Core Strengths</h2>
+        <div class="chips">
+          <span class="chip">System Coordination</span>
+          <span class="chip">JIT / JIS Operations</span>
+          <span class="chip">MES Reporting</span>
+          <span class="chip">Excel Investigation</span>
+          <span class="chip">Macro Automation</span>
+          <span class="chip">Inventory Control</span>
+          <span class="chip">Linefeed Monitoring</span>
+          <span class="chip">Revision Change Support</span>
+          <span class="chip">Shipping Accuracy</span>
+          <span class="chip">Cross-Functional Communication</span>
+          <span class="chip">QC Exception Review</span>
+          <span class="chip">Operational Visibility</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Systems and Operational Scope</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>MES-MTOi</h3>
+          <p class="muted">Used to export and analyze production, planner, and finished goods information that supports plant readiness and reporting.</p>
+        </div>
+        <div class="card">
+          <h3>PSM & StockObserver</h3>
+          <p class="muted">Used for inventory control, linefeed visibility, movement reporting, and performance monitoring tied to warehouse execution.</p>
+        </div>
+        <div class="card">
+          <h3>HOST</h3>
+          <p class="muted">Understood and used as the connection point between PSM and MES so key plant systems stay aligned.</p>
+        </div>
+        <div class="card">
+          <h3>Excel, Macros, AULA & AVAS</h3>
+          <p class="muted">Used for fast reporting, investigation, automation, and operational support across logistics and production workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div class="card readable">
+        <h2>Cross-Functional Coordination</h2>
+        <p>I support operations across logistics, production, IT, shipping, and receiving by helping teams work from the same reliable system information. I communicate with planners, project engineering leads, engineering, linefeed, and shipping to make sure part numbers, production activity, and inventory data stay aligned.</p>
+        <p>This includes helping ensure production has something to run, checking that the right materials are flowing at the right time, and making sure reporting reflects what is actually happening inside the plant.</p>
+      </div>
+      <div class="card readable">
+        <h2>Reporting and Visibility</h2>
+        <p>I export operational data from MES and related systems to show what planners created, what project teams are working on, and what finished goods are available or in process. I use Excel heavily to turn that data into faster, more useful reports for plant teams.</p>
+        <p>I also use macros to automate recurring reports so updates can be delivered more efficiently and consistently. Teams rely on me for accurate information because I have access to the systems they use and can connect the data across those tools.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Detailed Responsibilities and Coordination Work</h2>
+      <div class="timeline">
+        <div class="step">
+          <h3>1. Plant Reporting and Operational Communication</h3>
+          <p>I use MES-MTOi and related tools to export production, planning, and finished goods information, then turn that data into reports the plant can act on. These reports help teams understand current status, production readiness, and where attention is needed across operations.</p>
+          <p>Because many groups depend on this information, accuracy matters. I help keep logistics, production, and support teams aligned by delivering system-backed visibility rather than relying on assumptions or incomplete updates.</p>
+        </div>
+
+        <div class="step">
+          <h3>2. Excel-Based Investigation and Report Automation</h3>
+          <p>Excel is a major part of my workflow for both reporting and problem investigation. I use it to analyze issues, identify exceptions, and check for things that should not be happening in the plant systems or process flow.</p>
+          <p>I also use macros to automate recurring reports so plant updates can be created faster and with less manual effort. This improves consistency and helps teams respond more quickly to operational changes.</p>
+        </div>
+
+        <div class="step">
+          <h3>3. QC, Booking, and Inventory Accuracy Checks</h3>
+          <p>I investigate inventory and quality-related exceptions, including QC cases where items are scrapped under the wrong codes. I also check for double booking in production, where parts may be booked incorrectly in order to influence reported numbers.</p>
+          <p>In addition, I validate inventory movement and corrections based on booking codes so that material flow and system records stay accurate. This helps reduce risk in reporting, inventory control, and production decision-making.</p>
+        </div>
+
+        <div class="step">
+          <h3>4. Linefeed Monitoring and Part Flow Control</h3>
+          <p>I work with linefeed to make sure the correct part numbers are moving to the line and that requested parts are being supplied in a timely manner. Using StockObserver and PSM, I review movement activity, operational visibility, and performance tied to linefeed execution.</p>
+          <p>This matters because delays, wrong part usage, or poor movement control can directly affect production continuity in a JIT / JIS environment.</p>
+        </div>
+
+        <div class="step">
+          <h3>5. JIT / JIS Sequencing Support</h3>
+          <p>Because the plant operates in a Just-in-Time and Just-in-Sequence model, timing and sequence are critical. I help monitor whether operations are staying aligned with current production needs so the plant can continue running without unnecessary disruption.</p>
+          <p>My work supports the discipline needed for sequence-sensitive operations where material flow, production timing, and system accuracy have to stay synchronized.</p>
+        </div>
+
+        <div class="step">
+          <h3>6. Revision Change Management</h3>
+          <p>I also support revision changes from the production and shipping side, helping make sure the right finished goods are being produced and delivered based on current requirements. This includes internal running changes that may require label updates on our side, as well as harder customer-driven changes tied to Tesla demand.</p>
+          <p>I work with shipping to make sure parts are segregated correctly by revision level so the wrong material is not mixed, shipped, or used in production.</p>
+        </div>
+
+        <div class="step">
+          <h3>7. System Link Between PSM and MES</h3>
+          <p>I work with HOST as the middle layer between PSM and MES, helping make sure both systems stay updated and aligned. This is important because planners, sales, and production all rely on consistent information across those systems to make decisions and execute correctly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card impact readable">
+        <h2>Business Impact</h2>
+        <ul class="list">
+          <li>Improved plant visibility through accurate reporting tied to logistics, production, and finished goods activity.</li>
+          <li>Supported JIT / JIS execution by helping teams act on timely and sequence-sensitive information.</li>
+          <li>Reduced risk from QC coding errors, double booking, inventory movement issues, and revision mismatches.</li>
+          <li>Strengthened coordination between logistics, linefeed, production, engineering, planning, shipping, and IT.</li>
+          <li>Helped maintain accuracy in part flow, revision control, and shipment readiness for customer requirements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div class="card">
+        <h2>How I Work</h2>
+        <ul class="list">
+          <li>Pull data directly from plant systems instead of relying on assumptions.</li>
+          <li>Use Excel and macros to investigate issues and speed up reporting.</li>
+          <li>Work across departments to connect logistics, production, and shipping information.</li>
+          <li>Check timing, sequence, and part accuracy in a JIT / JIS operation.</li>
+          <li>Support operational decisions with clear, system-backed visibility.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Best Fit for Employers</h2>
+        <p class="muted">This experience is especially relevant for employers who need someone that understands how plant systems, reporting, inventory movement, and production timing connect inside a supply chain operation.</p>
+        <p class="muted">My role combines system visibility, investigation, coordination, and operational control in an environment where accuracy and timing directly affect production and shipping performance.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta">
+        <a class="btn" href="index.html">Back to Home</a>
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Vyron Galapin · Warehouse Systems Portfolio</p>
+    </footer>
+  </main>
+</body>
+</html>
